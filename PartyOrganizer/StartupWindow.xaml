@@ -1,0 +1,22 @@
+﻿<Window x:Class="PartyOrganizer.StartupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PartyOrganizer"
+        mc:Ignorable="d"
+        Title="Party Organizer 1.0" Height="183.088" Width="300">
+    <Grid>
+        <Button x:Name="btnCreateNewEvent" Content="Create new event
+" HorizontalAlignment="Left" Margin="76,109,0,0" VerticalAlignment="Top" Width="136" Click="btnCreateNewEvent_Click"/>
+        <ComboBox x:Name="cbEventsList" 
+                  HorizontalAlignment="Left" Margin="137,51,0,0" VerticalAlignment="Top" Width="120" 
+                  Loaded="cbEventsListLoaded"
+                  DisplayMemberPath="Name"
+                  SelectedValuePath="ID_EVENT" SelectionChanged="cbEventsList_SelectionChanged"/>
+        
+        <Label x:Name="label" Content="Check event:" HorizontalAlignment="Left" Margin="40,47,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="OR" HorizontalAlignment="Left" Margin="127,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.176,-0.495"/>
+
+    </Grid>
+</Window>
